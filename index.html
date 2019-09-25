@@ -16,7 +16,7 @@
 </div>
 <script>
     let customer = document.querySelector(".nosto_customer")
-    location.search.substr(1).split("&").map(s => s.split("=")).forEach((k,v) =>
+    location.search.substr(1).split("&").map(s => s.split("=")).forEach(([k,v]) =>
         customer.insertAdjacentHTML("beforeend",`<span class="${k}">${v}</span>`))
 </script>
 <script src="//connect.staging.nosto.com/include/qvuhs4m3"></script>
