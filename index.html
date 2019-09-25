@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo store</title>
-    <script src="//connect.staging.nosto.com/include/qvuhs4m3"></script>
 </head>
 <body>
+<div class="nosto_customer" style="display:none">
+<!--    <span class="email">john.doe@example.com</span>-->
+<!--    <span class="first_name">John</span>-->
+<!--    <span class="last_name">Doe</span>-->
+<!--    <span class="customer_reference">e18daf14-d715-4d77-82f2-93eceb4ae1ef</span>-->
+<!--    <span class="marketing_permission">false</span>-->
+</div>
+<script>
+    let customer = document.querySelector(".nosto_customer")
+    location.search.substr(1).split("&").map(s => s.split("=")).forEach((k,v) =>
+        customer.insertAdjacentHTML("beforeend",`<span class="${k}">${v}</span>`))
+</script>
+<script src="//connect.staging.nosto.com/include/qvuhs4m3"></script>
     <div class="nosto_element" id="frontpage-nosto-1"></div>
 </body>
 </html>
