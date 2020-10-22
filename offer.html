@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo store</title>
+</head>
+<body>
+<br/>
+Super offer 400% off!
+<br/>
+<a href="index.html">Go home</a>
+
+<script>
+    let customer = document.querySelector(".nosto_customer")
+    location.search.substr(1).split("&").map(s => s.split("=")).forEach(([k,v]) =>
+        customer.insertAdjacentHTML("beforeend",`<span class="${k}">${v}</span>`))
+</script>
+<script src="//connect.nosto.com/include/qsjhb97s"></script>
+    <div class="nosto_element" id="frontpage-nosto-1"></div>
+</body>
+</html>
