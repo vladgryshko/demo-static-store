@@ -15,7 +15,7 @@
     nostojs(function(api) {
       console.log("showing popup "+id)
       console.log(api.popupCampaigns())
-      api.openPopup(id);
+      api.openPopup(id, {preview:true});
     });
   }
     function showPopupFromList(){
@@ -52,8 +52,11 @@
 
 </head>
 <body>
-  <input type="button" value="add to cart product 1" onclick='addToCart();'/>
+  <input type="button" value="add to cart product 1" onclick='addToCart();'/><br/>
+  <input id="popupid" size="40" type="text" value="5ed887c360b2bfe4879c3018"></input>
 
+<input type="button" value="show api popup with preview on" onclick="showPopup(document.getElementById('popupid').value)"/>
+<br/>
   <div class="nosto_element" id="top">top2</div>
   <div class="nosto_page_type" style="display:none">product</div>
   <div id="klarna-test">
