@@ -2,7 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Product 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page - Product 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .product-page {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .product-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .product-header img {
+      max-width: 300px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .product-header h1 {
+      margin: 0;
+    }
+    .price {
+      color: #e74c3c;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .description {
+      margin: 10px 0;
+    }
+    .details {
+      margin-top: 20px;
+    }
+    .details dt {
+      font-weight: bold;
+    }
+    .details dd {
+      margin: 0 0 10px 0;
+    }
+    .sku-list {
+      margin-top: 30px;
+    }
+    .sku-item {
+      display: flex;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #f1f1f1;
+      border-radius: 8px;
+      align-items: center;
+    }
+    .sku-item img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+    .sku-item .sku-details {
+      flex-grow: 1;
+    }
+    .sku-item .price {
+      margin: 0;
+    }
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-left: 10px;
+      background: #2ecc71;
+      color: white;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+  </style>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN1P65M1SP"></script>
 <script type="text/javascript" async="" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Mk9Qwa"></script>
@@ -64,6 +144,62 @@
 
 </head>
 <body>
+
+<div class="product-page">
+  <div class="product-header">
+    <img src="https://vladgryshko.github.io/demo-static-store/img/1.webp" alt="Product 1">
+    <div>
+      <h1>Product 1</h1>
+      <p class="price">€100.00</p>
+      <p class="description">Demo product 1</p>
+      <p>Brand: Demo</p>
+      <p>Availability: <span class="badge">In Stock</span></p>
+      <p>Material: Cotton</p>
+      <p>Weather: Summer</p>
+      <p>Type: Top</p>
+    </div>
+  </div>
+
+  <dl class="details">
+    <dt>Category:</dt>
+    <dd>/Cat 1, /discount</dd>
+    <dt>List Price:</dt>
+    <dd>€120.00</dd>
+    <dt>Tags:</dt>
+    <dd>12345, 33333</dd>
+  </dl>
+
+  <div class="sku-list">
+    <h2>Available SKUs</h2>
+
+    <div class="sku-item">
+      <img src="https://vladgryshko.github.io/staging-vlad-store/img/1-1.webp" alt="S-Orange">
+      <div class="sku-details">
+        <h3>S-Orange</h3>
+        <p class="price">€1269.00 <del>€1299.00</del></p>
+        <p>Size: S</p>
+        <p>Color: Orange</p>
+        <p>Inventory Level: 55</p>
+        <a href="https://vladgryshko.github.io/staging-vlad-store/products/1.html#/1-size-s/13-color-orange">View Details</a>
+      </div>
+    </div>
+
+    <div class="sku-item">
+      <img src="https://vladgryshko.github.io/staging-vlad-store/img/1-2.webp" alt="S-Blue">
+      <div class="sku-details">
+        <h3>S-Blue</h3>
+        <p class="price">€1269.00 <del>€1299.00</del></p>
+        <p>Size: S</p>
+        <p>Color: Blue</p>
+        <p>Inventory Level: 12</p>
+        <a href="https://vladgryshko.github.io/staging-vlad-store/products/1.html#/1-size-s/14-color-blue">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <input type="button" value="add to cart product 1" onclick='addToCart();'/><br/>
   <input id="popupid" size="40" type="text" value="5ed887c360b2bfe4879c3018"></input>
 
@@ -84,7 +220,7 @@
     <br/>
     <a href="nosto.com">Nosto</a>
   </div>
-<div class="nosto_product">
+<div class="nosto_product" style="display: none;">
   <span class="url">https://vladgryshko.github.io/demo-static-store/products/1.html</span>
   <span class="product_id">1</span>
   <span class="name">Product 1</span>
