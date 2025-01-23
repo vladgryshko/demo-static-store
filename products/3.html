@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>3</title>
-  <style>
-    .nosto_product span {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="../style/style.css">
+
   <script src="//connect.nosto.com/include/qsjhb97s"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN1P65M1SP"></script>
@@ -20,56 +17,85 @@
 </script>
 </head>
 <body>
-<div class="nosto_product">
+<!-- Visible Product Page -->
+<div class="product-page">
+  <div class="product-header">
+    <img src="https://vladgryshko.github.io/demo-static-store/img/3.webp" alt="Product 3">
+    <div>
+      <h1>Product 3</h1>
+      <p class="price">€75.00</p>
+      <p class="description">Demo product 3 description.</p>
+      <p>Brand: Demo</p>
+      <p>Availability: <span class="badge">In Stock</span></p>
+      <p>Material: Wood</p>
+      <p>Weather: All Seasons</p>
+      <p>Type: Furniture</p>
+    </div>
+  </div>
+
+  <dl class="details">
+    <dt>Category:</dt>
+    <dd>/Furniture, /discount</dd>
+    <dt>List Price:</dt>
+    <dd>€90.00</dd>
+    <dt>Tags:</dt>
+    <dd>98765, 11223</dd>
+  </dl>
+
+  <div class="sku-list">
+    <h2>Available SKUs</h2>
+
+    <div class="sku-item">
+      <img src="https://vladgryshko.github.io/demo-static-store/img/3-1.webp" alt="M-Brown">
+      <div class="sku-details">
+        <h3>M-Brown</h3>
+        <p class="price">€1350.00 <del>€1399.00</del></p>
+        <p>Size: M</p>
+        <p>Color: Brown</p>
+        <p>Inventory Level: 25</p>
+        <a href="https://vladgryshko.github.io/demo-static-store/3.html#/products/3-size-m/13-color-brown">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Invisible Tagging Div -->
+<div class="nosto_product" style="display: none;">
   <span class="url">https://vladgryshko.github.io/demo-static-store/products/3.html</span>
   <span class="product_id">3</span>
   <span class="name">Product 3</span>
-  <span class="image_url">https://vladgryshko.github.io/demo-static-store/img/3.jpg</span>
+  <span class="image_url">https://vladgryshko.github.io/demo-static-store/img/3.webp</span>
   <span class="price">75.00</span>
   <span class="price_currency_code">EUR</span>
   <span class="availability">InStock</span>
-  <span class="category">/Cat 3</span>
-  <span class="description">Demo product 1</span>
-  <span class="list_price">75</span>
-    <span class="tag1">666666</span>
-  <span class="tag1">33333</span>
+  <span class="category">/Furniture</span>
+  <span class="category">/discount</span>
+  <span class="description">Demo product 3 description.</span>
+  <span class="list_price">90.00</span>
+  <span class="tag1">98765</span>
+  <span class="tag1">11223</span>
   <span class="brand">Demo</span>
+  <span class="custom_fields">
+      <span class="material">Wood</span>
+      <span class="weather">All Seasons</span>
+      <span class="pt">Furniture</span>
+    </span>
 
-<span class="custom_fields">
-    <span class="material">Wood</span>
-    <span class="weather">Spring</span>
-    <span class="pt">boots</span>
-  </span>
-  
+  <!-- SKUs -->
   <span class="nosto_sku">
-    <span class="id">1</span>
-      <span class="name">M-Orange</span>
-      <span class="price">1269.00</span>
-      <span class="list_price">1299.00</span>
-      <span class="inventory_level">55</span>
-      <span class="url">https://vladgryshko.github.io/staging-vlad-store/3.html#/products/1-size-s/13-color-orange</span>
-      <span class="image_url">https://vladgryshko.github.io/staging-vlad-store/img/3-1.webp</span>
+      <span class="id">1</span>
+      <span class="name">M-Brown</span>
+      <span class="price">1350.00</span>
+      <span class="list_price">1399.00</span>
+      <span class="inventory_level">25</span>
+      <span class="url">https://vladgryshko.github.io/demo-static-store/3.html#/products/3-size-m/13-color-brown</span>
+      <span class="image_url">https://vladgryshko.github.io/demo-static-store/img/3-1.webp</span>
       <span class="availability">InStock</span>
       <span class="custom_fields">
         <span class="size">M</span>
-        <span class="color">Orange</span>
+        <span class="color">Brown</span>
       </span>
-  </span>
-
-  <span class="nosto_sku">
-    <span class="id">2</span>
-      <span class="name">S-Green</span>
-      <span class="price">1269.00</span>
-      <span class="list_price">1299.00</span>
-      <span class="inventory_level">12</span>
-      <span class="url">https://vladgryshko.github.io/staging-vlad-store/3.html#/products/1-size-s/14-color-blue</span>
-      <span class="image_url">https://vladgryshko.github.io/staging-vlad-store/img/3-2.webp</span>
-      <span class="availability">InStock</span>
-      <span class="custom_fields">
-        <span class="size">S</span>
-        <span class="color">Green</span>
-      </span>
-  </span>
+    </span>
 </div>
 
 <br/>
